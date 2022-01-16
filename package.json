@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
+    "build:modern": "nuxt build --mordern=server",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "prod": "yarn build:modern && yarn start"
   },
   "dependencies": {
     "core-js": "^3.19.3",
